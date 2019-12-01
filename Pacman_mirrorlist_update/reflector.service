@@ -1,0 +1,11 @@
+[Unit]
+Description=Pacman mirrorlist update
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/reflector --country 'Japan' --country 'South Korea' --country 'Taiwan' --country 'Hong Kong' --country 'China' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
+[Install]
+RequiredBy=multi-user.target
