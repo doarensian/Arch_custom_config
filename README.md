@@ -30,6 +30,7 @@ $ sudo mkinitcpio -p linux (linux reads as a linux-lts,linux-hardend.)
 $ sudo cp reflector.timer /etc/systemd/system/reflector.timer
 $ sudo systemctl daemon-reload
 $ sudo systemctl start reflector.timer
-## References
 ```
+
+## References
 > 1. [ArchWiki:Reflector#Automation](https://wiki.archlinux.org/index.php/Reflector#Automation)
