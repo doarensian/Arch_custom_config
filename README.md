@@ -32,5 +32,12 @@ $ sudo systemctl daemon-reload
 $ sudo systemctl start reflector.timer
 ```
 
+## Nvidia package Update configs:
+```
+$ cd ~/Arch_custom_config/Nvidia_update
+$ sudo cp nvidia.hook /etc/pacman.d/hooks/nvidia.hook
+$ sudo mkinitcpio -p linux (linux reads as a linux-lts,linux-hardend.)
+
 ## References
 > 1. [ArchWiki:Reflector#Automation](https://wiki.archlinux.org/index.php/Reflector#Automation)
+> 1. [ArchWiki:NVIDIA#Pacman_hook](https://wiki.archlinux.org/index.php/NVIDIA#Pacman_hook)
